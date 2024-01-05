@@ -2,3 +2,15 @@ Lutfi Nuari -> Judul pertama
 PERSONAL PROFILE, EDUCATION, WORK EXPERIENCE -> Judul kedua
 Universitas Tapopp, Cicigo Academy, Galaxy -> Judul ketiga
 konten dari setiap judul -> paragraf
+
+echo "# project-Making-a-To-Do-List-Website" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/lutfi-n/project-Making-a-To-Do-List-Website.git
+git push -u origin main
+
+git remote add origin https://github.com/lutfi-n/project-Making-a-To-Do-List-Website.git
+git branch -M main
+git push -u origin main
