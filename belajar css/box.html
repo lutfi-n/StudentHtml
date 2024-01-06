@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
+    <style>
+        p {
+            margin-top: 2em;
+            color: goldenrod;
+        }
+        aside p {
+            margin: unset;
+            color: unset;
+        }
+        div strong {
+            margin: inherit;
+            color: inherit;
+        }
+    </style>
 </head>
 <body>
     <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*6fM3tZOuFBAERhEhB6AkZw.png" >
+    <hr>
+    <p>this is outside</p>
+    <aside>
+        <p>this is strong</p>
+    </aside>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore aspernatur illo enim, necessitatibus ducimus unde laudantium. Possimus pariatur veritatis, id doloremque quaerat impedit tempora! Totam magni at dicta ipsum!</p>
+    <div>
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci quam quis blanditiis reprehenderit vitae illo illum error labore tempore doloremque accusantium, alias dolorem sed est. Quas, explicabo ad. Facilis!</strong>
+    </div>
 </body>
 </html>
