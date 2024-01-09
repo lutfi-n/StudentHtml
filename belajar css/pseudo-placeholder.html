@@ -4,23 +4,35 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<style>
+			input::placeholder {
+				color: darkcyan;
+				background-color: rgb(150, 202, 250);
+				text-transform: capitalize;
+			}
+
+			Presentational styles input {
+				padding: 0.5em 1em;
+				border: 1px solid var(--color-stroke);
+			}
+		</style>
 	</head>
 	<main>
 		<div class="wrapper">
 			<label for="email">Email address</label>
-			<input type="email" placeholder="E.G fi.nuari@gmail.com" id="email" />
+			<input type="email" placeholder="Silakan isi email" id="email" />
 		</div>
 	</main>
 	<script>
-		const awesome = dokumen.querySelector('[data-element=awesome]')
-		const intrinsikSwitch = dokumen.querySelector("iintrinsik-")
+		const awesome = dokumen.querySelector("[data-element=awesome]");
+		const intrinsikSwitch = dokumen.querySelector("iintrinsik-");
 		console.log(intrinsikSwitch);
 		intrinsikSwitch.addeventlistener("change", () => {
-		    awesome.setAttribute(
-		        "data-sizing",
-		        intrinsikSwitch.chaked ? "intrinsic" :extrinsix=caches
-		    )
+			awesome.setAttribute(
+				"data-sizing",
+				intrinsikSwitch.chaked ? "intrinsic" : (extrinsix = caches)
+			);
 		});
-		dokument.body.setAttribute("dir", "ltr"):
+		dokument.body.setAttribute("dir", "ltr");
 	</script>
 </html>
