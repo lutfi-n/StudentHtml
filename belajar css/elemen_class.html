@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.post :empty {
+				background-color: blue;
+				height: 70px;
+			}
+			p:first-child {
+				background-color: lightskyblue;
+				font-weight: bold;
+			}
+
+			p:last-child {
+				background-color: yellowgreen;
+				font-weight: bold;
+			}
+
+			li:only-child {
+				background-color: lightgoldenrodyellow;
+			}
+
+			li:nth-child(3) {
+				background: yellow;
+			}
+			/* untuk table */
+			tr:nth-child(even) td {
+				background-color: #f3f3f3;
+			}
+
+			aside {
+				max-width: 60ch;
+			}
+
+			aside > * + * {
+				margin-top: 1.2rem;
+			}
+
+			.my-parent div:first-child {
+				color: red;
+			}
+
+			.my-parent div:first-of-type {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<article class="post">
+				<p>I am the first paragraph</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+					necessitatibus impedit vitae eius ea nemo quas provident. Sequi
+					pariatur rem beatae inventore dolores ipsam fuga repellat et quos
+					laudantium? Voluptate! Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Est odio ipsum temporibus mollitia dolorum laborum
+					molestiae? Expedita deleniti dolores ut. Dolorem autem, laboriosam hic
+					temporibus voluptatem perferendis mollitia aspernatur a.
+				</p>
+				<p></p>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
+					similique iure. Incidunt ad sed deleniti asperiores ullam illo nisi
+					iusto! Veritatis, placeat sunt. Ab, error. Soluta beatae dolorum porro
+					pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Excepturi qui possimus fuga, minima laudantium neque repellendus
+					molestiae dignissimos esse facilis tempore voluptatibus sit quas cum
+					quo sunt consequatur, necessitatibus eveniet.
+				</p>
+				<p>I am the last paragraph</p>
+			</article>
+			<aside>
+				<hr />
+				<p>One item in a list</p>
+				<ul>
+					<li>I am the only list item</li>
+				</ul>
+				<p>Mutiple items in a list</p>
+				<ul>
+					<li>I am one of many list items</li>
+					<li>Nullam id dolor id nibh ultricies</li>
+					<li>Cras mattis consecture purus sit amet</li>
+				</ul>
+			</aside>
+			<hr />
+			<div class="my-parent">
+				<p>A paragraph</p>
+				<div>A div</div>
+				<div>Another div</div>
+			</div>
+		</main>
+	</body>
+</html>

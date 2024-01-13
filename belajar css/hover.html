@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			a:hover {
+				background: black;
+				color: white;
+				text-decoration: none;
+			}
+
+			.button:active {
+				transform: scale(0.99);
+				box-shadow: none;
+			}
+
+			.button {
+				background-color: blue;
+				border: none;
+				color: white;
+				padding: 25px;
+				cursor: pointer;
+			}
+
+			.home:focus {
+				outline: 2px dashed black;
+				outline-offset: 2px;
+				background-color: blue;
+			}
+
+			.home {
+				padding: 25px;
+			}
+
+			a:link {
+				color: blue;
+			}
+
+			a.visited {
+				color: black;
+			}
+
+			:checked {
+				box-shadow: 0px 0px 5px 2px green;
+			}
+			label {
+				font-weight: bold;
+			}
+			label {
+				font-weight: bold;
+			}
+			input.email {
+				border: 1px solid black;
+			}
+			input.email:invalid {
+				border-color: red;
+			}
+
+			input.email:valid {
+				border-color: green;
+			}
+
+			input.email {
+				min-width: 320px;
+				padding: 0.5rem 1rem;
+				line-height: 1;
+				font: inherit;
+				border-radius: 0.25rem;
+			}
+
+			.info {
+				font-size: 0.9rem;
+				font-style: italic;
+				margin-block-start: 0.5em;
+			}
+		</style>
+	</head>
+	<main>
+		<div class="wrapper">
+			<p>this is a link: <a href="#">hover over me</a></p>
+			<button class="button">Clik and hold to see the active state</button>
+			<button class="home">home</button>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a target="_blank" href="https://codepen.io/MySkill/pen/qBowoBK"
+						>myskill</a
+					>
+				</li>
+				<li>
+					<a
+						target="_blank"
+						href="https://www.brainacademy.id/blog/contoh-surat-lamaran-pekerjaan-pengertian-dan-struktur"
+						>surat lamaran</a
+					>
+				</li>
+				<li>
+					<a target="_blank" href="https://myskill.id/course/css-pseudo-class"
+						>class myskill</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<br />
+		<div class="box">
+			<label>
+				<input type="checkbox" />
+				check me
+			</label>
+			<label>
+				<input type="checkbox" />
+				check me too
+			</label>
+		</div>
+		<br />
+		<form>
+			<label for="email">Email address</label>
+			<input
+				class="email"
+				type="email"
+				id="email"
+				required
+				placeholder="A valid email, like name@domain.com"
+				aria-describedby="emailinfo"
+			/>
+			<p class="info" id="emailinfo">
+				Add a valid email address to see the state change
+			</p>
+		</form>
+	</main>
+</html>
